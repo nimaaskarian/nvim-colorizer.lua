@@ -31,10 +31,10 @@ managers below, or use your own package manager.
   },
   opts = {
     "css",
-    "jsx",
+    "javascriptreact",
     "html",
   },
-  ft = { "css", "javascriptreact", "html"},
+  ft = { "css", "javascriptreact", "html" },
 },
 ```
 
