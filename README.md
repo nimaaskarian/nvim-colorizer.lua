@@ -14,8 +14,24 @@ Requires Neovim >= 0.4.0 and `set termguicolors` (I'm looking into relaxing
 these constraints). If you don't have true color for your terminal or are
 unsure, [read this excellent guide](https://github.com/termstandard/colors).
 
-Use your plugin manager or clone directly into your `runtimepath`.
+Either clone directly into your `runtimepath`, or use the one of plugin managers below.
+### Lazy
+```lua
+  {
+    "norcalli/nvim-colorizer.lua",
+    config=true,
+    lazy=true,
+    cmd = {
+      "ColorizerToggle",
+      "ColorizerAttachToBuffer",
+      "ColorizerReloadAllBuffers",
+      "ColorizerDetachFromBuffer",
+    }
+    files = { "*.css", "*.jsx", "*.html" },
+  },
+```
 
+### Plug
 ```vim
 Plug 'norcalli/nvim-colorizer.lua'
 ```
