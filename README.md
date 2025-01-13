@@ -29,7 +29,12 @@ managers below, or use your own package manager.
     "ColorizerReloadAllBuffers",
     "ColorizerDetachFromBuffer",
   },
-  files = { "*.css", "*.jsx", "*.html" },
+  opts = {
+    "css",
+    "jsx",
+    "html",
+  },
+  ft = { "css", "javascriptreact", "html"},
 },
 ```
 
